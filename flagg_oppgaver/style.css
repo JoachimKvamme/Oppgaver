@@ -1,0 +1,40 @@
+#svenskeflagget {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #1832c5;
+}
+
+#norskeflagget {
+    position:sticky;
+    top: 0;
+    left: 10px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+#norskeflagget:hover {
+    left: 15px;
+}
+
+#dannebrog {
+    position: relative;
+    top: 30px;
+    left: 15px;
+    border-bottom: 3px rgb(220, 20, 20);
+}
+
+#tabell {
+    position:absolute;
+    top: 300px;
+    left: 15px;
+    margin: auto;
+    border: 1px red;
+}
+
+#seksjon {
+    position:relative;
+    top: 120px;
+    left: 15px;
+}
