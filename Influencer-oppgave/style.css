@@ -1,8 +1,11 @@
 .header {
     background-color: #F1F1F1;
+    background-image: url(../bilder/KI-gate.png);
+    background-position: right top;
     text-align: center;
     padding: 20px;
 }
+
 
 .topnav {
     overflow: hidden;
