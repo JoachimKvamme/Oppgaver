@@ -1,0 +1,55 @@
+body {
+    background-image: url(../bilder/Hotel-background.png);
+    color:#FFB570;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body footer {
+    align-items: end;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+#infokort {
+    display: flex;
+    height: 50vh;
+    width: 40vw;
+    flex-direction: column;
+    background-color: black;
+    opacity: 80%;
+    padding: 2vw;
+
+
+    }
+
+#skjema {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 40vw;
+    background-color: blue;
+    opacity: 70%;
+    align-items: center;
+    padding: 2vw;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 20vw;
+    
+
+
+}
