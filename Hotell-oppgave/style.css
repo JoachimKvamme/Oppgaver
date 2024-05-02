@@ -3,20 +3,16 @@ body {
     color:#FFB570;
 }
 
-.body {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.body footer {
-    align-items: end;
-}
-
 .main {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     height: 80vh;
     width: 100vw;
 }
