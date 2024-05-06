@@ -1,0 +1,57 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --lighter_blue: #63aef8;
+    --darker_blue: #08427c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue);
+    align-items: stretch;
+}
+
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: stretch;
+    justify-items: stretch;
+    margin-left: auto;
+}
+
+header ul li {
+    display: flex;
+    justify-items: stretch;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+header ul li:hover {
+    background-color: var(--lighter_blue);
+}
+
+main {
+    display: flex;
+    background-color: var(--darker_blue);
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+main > div:nth-child(1) {
+
+}
+
+main > div:nth-child(2) {
+    
+}
