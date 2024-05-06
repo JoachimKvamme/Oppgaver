@@ -1,0 +1,58 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --lighter_blue: #63aef8;
+    --darker_blue: #08427c;
+}
+
+
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: var(--lighter_blue);
+    height: 100vh;
+    gap: 20px;
+    
+}
+
+header {
+    grid-area: header;
+    border-style: solid;
+    border-width: 2px;
+}
+
+nav {
+    grid-area: nav;
+    border-style: solid;
+    border-width: 2px;
+}
+
+main {
+    grid-area: content;
+    border-style: solid;
+    border-width: 2px;
+}
+
+footer {
+    grid-area: footer;
+    border-style: solid;
+    border-width: 2px;
+}
+
+aside {
+    grid-area: sidebar;
+    border-style: solid;
+    border-width: 2px;
+}

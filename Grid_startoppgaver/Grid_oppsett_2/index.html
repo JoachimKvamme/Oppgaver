@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-leksjon</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* evt 1fr 1fr 1fr */
+            gap: 10px;
+            /*grid-auto-rows: 200px;*/
+            grid-auto-rows: minmax(200px, auto);
+            max-width: 960px;
+            margin: 100px auto;
+            padding: 10px;}
+
+        .item {
+            background-color: steelblue;
+            color:white;
+            font-size: 20px;
+            padding: 20px;
+            border: skyblue 1px solid;}
+
+        .item:nth-of-type(1) {
+            background-color: blueviolet;
+            grid-column-start: 1;
+            grid-column-end: 4;}
+
+        .item:nth-of-type(2) {
+            background-color: orchid;
+            grid-row-start: 2;
+            grid-row-end: 4;}
+
+        .item:nth-of-type(8) {
+            background-color: olive;
+            grid-column: span 2;
+        }
+
+        .item:nth-of-type(9) {
+            background-color: brown;
+            grid-column: span 3;
+            /* position: relative;
+            top: -150px;
+            right: 150px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius impedit repudiandae, dolorum deserunt enim?</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+
+    </div>
+    
+</body>
+</html>
