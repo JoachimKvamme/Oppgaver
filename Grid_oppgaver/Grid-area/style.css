@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'header header section aside'
+                        'footer aside2 aside2 aside'; 
+
+    gap: 20px;
+    background-color: beige;
+
+    grid-auto-rows: minmax(200px, auto);
+
+}
+
+.grid-item {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: blueviolet;
+}
+
+.grid-container :nth-child(1) {
+    grid-area: header;
+}
+
+.grid-container :nth-child(2) {
+    grid-area: section;
+}
+
+.grid-container :nth-child(3) {
+    grid-area: aside;
+}
+
+.grid-container :nth-child(4) {
+    grid-area: footer;
+}
+
+.grid-container :nth-child(5) {
+    grid-area: aside2;
+}
