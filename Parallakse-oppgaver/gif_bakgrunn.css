@@ -1,0 +1,60 @@
+.sceneskifte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.bildebeholder {
+
+    background-image: url(../bilder/gif-bakgrunn.gif);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.bildebeholder2 {
+
+    background-image: url(../bilder/gif-bakgrunn.gif);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bildebeholder3 {
+
+    background-image: url(../bilder/gif-bakgrunn.gif);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bildebeholder4 {
+
+    background-image: url(../bilder/gif-bakgrunn.gif);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
