@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="fornavn" id="fornavn" placeholder="Fornavn">
+    <input type="text" name="mellomnavn" id="mellomnavn" placeholder="Mellomnavn">
+    <input type="text" name="etternavn" id="etternavn" placeholder="Etternavn">
+
+    <button onclick="fullt_navn()">Klikk her</button><br>
+
+    <div id="helt_navn"></div>
+
+    <script>
+
+        function fullt_navn() {
+            fornavn = document.getElementById("fornavn").value
+            mellomnavn = document.getElementById("mellomnavn").value
+            etternavn = document.getElementById("etternavn").value
+            
+            document.getElementById("helt_navn").innerHTML = `${fornavn} ${mellomnavn} ${etternavn}`
+
+        }
+
+
+    </script>
+</body>
+</html>

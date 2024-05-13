@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ekko</h1>
+    <br>
+    <textarea name="tekstfelt" id="tekstfelt" oninput="tekstfelt()" rows="20" cols="50" placeholder="Skriv inn teksten du vil ha gjentatt"></textarea>
+    <br>
+    <label for="ekko" id="ekko"></label>
+
+    <script>
+        function tekstfelt() {
+            document.getElementById("ekko").innerHTML = document.getElementById("tekstfelt").value
+
+        }
+    </script>
+</body>
+</html>

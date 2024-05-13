@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="overskrift1">Overskrift</h1>
+    <button id="knapp1" onclick="endre_bakgrunn1()">1</button>
+    <h1 id="overskrift2">Overskrift</h1>
+    <button id="knapp2" onclick="endre_bakgrunn2()">2</button>
+    <h1 id="overskrift3">Overskrift</h1>
+    <button id="knapp3" onclick="endre_bakgrunn3()">3</button>
+    <h1 id="overskrift4">Overskrift</h1>
+    <button id="knapp4" onclick="endre_bakgrunn4()">4</button>
+    <br>
+    <br>
+    <button id="knapp5" onclick="klarer()">Klarer overskriftene</button>
+    
+    <script>
+
+        function endre_bakgrunn1() {
+            document.getElementById("overskrift1").style.backgroundColor = "red"
+
+        }
+        function endre_bakgrunn2() {
+            document.getElementById("overskrift2").style.backgroundColor = "red"
+
+        }
+        function endre_bakgrunn3() {
+            document.getElementById("overskrift3").style.backgroundColor = "red"
+
+        }
+        function endre_bakgrunn4() {
+            document.getElementById("overskrift4").style.backgroundColor = "red"
+
+        }
+
+        function klarer() {
+            document.getElementById("overskrift1").style.backgroundColor = "white"
+            document.getElementById("overskrift2").style.backgroundColor = "white"
+            document.getElementById("overskrift3").style.backgroundColor = "white"
+            document.getElementById("overskrift4").style.backgroundColor = "white"
+
+        }
+    </script>
+
+
+</body>
+</html>
+
+

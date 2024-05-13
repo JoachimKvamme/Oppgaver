@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>KI-genererte versjoner av Bergen</h1>
+    <img src="../bilder/KI-generert_bergen2.png" alt="Bilde" id="bilde">
+    <button id="knapp1" onclick="bildebytte_1()">1</button>
+    <button id="knapp2" onclick="bildebytte_2()">2</button>
+    <button id="knapp3" onclick="bildebytte_3()">3</button>
+    <button id="gjenstart" onclick="gjenstart()">Start om igjen</button>
+<img src="../bilder/" alt="">
+    <script>
+        function bildebytte_1() {
+            document.getElementById("bilde").src = "../bilder/KI-tegneserie-Bergen.jpg"
+        }
+
+        function bildebytte_2() {
+            document.getElementById("bilde").src = "../bilder/KI-tegneserie-Bergen2.jpg"
+        }
+
+        function bildebytte_3() {
+            document.getElementById("bilde").src = "../bilder/KI-tegneserie-Bergen3.jpg"
+        }
+
+        function gjenstart() {
+            document.getElementById("bilde").src = "../bilder/KI-generert_bergen2.png"
+        }
+    </script>
+    
+</body>
+</html>
