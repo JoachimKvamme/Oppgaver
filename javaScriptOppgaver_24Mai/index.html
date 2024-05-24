@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Oppgave 1-->
+    <h2>Streng-analyse!</h2>
+    <Label>Skriv inn tekst:</Label><br>
+    <textarea name="tekst" id="tekst" cols="40" rows="5" placeholder="Skriv inn ønsket tekst her"></textarea><br>
+    <button onclick="antallTegn()">Finn antall tegn i teksten</button>
+    <button onclick="storeBokstaver()">Gjør om teksten til store bokstaver</button>
+    <button onclick="smaaBokstaver()">Gjør om teksten til små bokstaver</button><br>
+    <label for="resultat" id="resultat"></label>
+
+    <!--Oppgave 2-->
+
+    <h2>Innlogging</h2>
+    <label for="brukernavn">Brukernavn:</label><br>
+    <input type="text" id="brukernavn"><br>
+    <label for="password">Passord:</label><br>
+    <input type="password" id="passord"><br>
+    <button id="loggInn" onclick="loggInn()">Logg inn</button><br>
+    <label for="resultat" id="innloggingsresultat"></label>
+
+    <script src="javaScript.js"></script>
+
+    <!--Oppgave 3-->
+    <h2>Epost-generator 2.0</h2><br>
+
+    <label for="fornavn">Skriv inn ditt fornavn:</label><br>
+    <input type="tekst" id="fornavn"><br>
+    <label for="mellomnavn">Skriv inn ditt mellomnavn:</label><br>
+    <input type="text" id="mellomnavn"><br>
+    <label for="etternavn">Skriv inn ditt etternavn:</label><br>
+    <input type="text" id="etternavn"><br>
+    <button onclick="epostGenerator()">Trykk her</button><br>
+    <label for="epost" id="epost"></label>
+
+    <!--Oppgave 4-->
+
+    <h2>Fergebilletter!</h2><br>
+    <label for="reisedistanse">Hvor langt vil du ta fergen?</label><br>
+    <input type="number"><br>
+    <label for="alder">Hvor gammel er du?</label><br>
+    <input type="number"><br>
+    <button onclick="pris()">Regn ut billettpris</button>
+
+
+
+</body>
+</html>
