@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    width: 150px;
+}
+
+button {
+    width: 100px;
+}
+
+input, button, label, h2, select {
+    margin: 16px;
+}

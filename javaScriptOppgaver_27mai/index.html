@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Oppgave 1 -->
+
+    <h2>Skriv inn ditt navn</h2>
+    <input type="text" id="navnefelt" placeholder="Skriv inn ditt navn">
+    <button onclick="hei()">Klikk her</button>
+    <label for="melding" id="melding"></label>
+
+    <script src="javaScript.js"></script>
+
+    <!-- Oppgave 2 -->
+
+    <h2>Kalkulator</h2>
+    <input type="number" id="tall1" placeholder="Tall nummer én">
+    <select name="operator" id="operator">Velg en operasjon
+        <option value="addisjon">+</option>
+        <option value="subtraksjon">-</option>
+        <option value="multiplikasjon">*</option>
+        <option value="divisjon">/</option>
+    </select>
+    <input type="number" id="tall2" placeholder="Tall nummer to">
+    <button onclick="kalkulator()">Regn ut</button>
+    <label for="resultat" id="resultat"></label>
+
+    <!-- Oppgave 3 -->
+
+    <h2>På tide å velge en farge</h2>
+    <label for="rød">Rød:</label>
+    <input type="radio" name="farge" id="rød" value="Rød">
+    <label for="grønn">Grønn:</label>
+    <input type="radio" name="farge" id="grønn" value="Grønn">
+    <label for="blå">Blå:</label>
+    <input type="radio" name="farge" id="blå" value="Blå">
+    <button onclick="farge()">Klikk her</button>
+    <label for="valgtFarge" id="valgtFarge"></label>
+
+
+
+</body>
+</html>
