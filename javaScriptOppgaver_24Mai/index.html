@@ -25,7 +25,7 @@
     <button id="loggInn" onclick="loggInn()">Logg inn</button><br>
     <label for="resultat" id="innloggingsresultat"></label>
 
-    <script src="javaScript.js"></script>
+    
 
     <!--Oppgave 3-->
     <h2>Epost-generator 2.0</h2><br>
@@ -42,13 +42,27 @@
     <!--Oppgave 4-->
 
     <h2>Fergebilletter!</h2><br>
-    <label for="reisedistanse">Hvor langt vil du ta fergen?</label><br>
-    <input type="number"><br>
+    <label for="reisedistanse">Hvor langt vil du ta fergen i kilometer?</label><br>
+    <input type="number" id="reisedistanse"><label for=""> kilometer</label><br>
     <label for="alder">Hvor gammel er du?</label><br>
-    <input type="number"><br>
-    <button onclick="pris()">Regn ut billettpris</button>
+    <input type="number" id="alder"><label for=""> år</label><br>
+    <button onclick="pris()">Regn ut billettpris</button><br>
+    <label for="billettpris" id="billettpris"></label>
+
+    <h2>For flere reisende som betaler sammen!</h2>
+    <label for="reisestrekning">Hvor langt skal dere?:</label><br>
+    <input type="number" name="reisestrekningFlere" id="reisestrekningFlere"> kilometer</input><br>
+    <label for="reisende">Skriv inn hvor mange passasjerer du kjøper for:</label><br>
+    <input type="number" id="reisendeBarn"> Barn</input><br>
+    <input type="number" id="reisendeVoksne"> Voksne</input><br>
+    <input type="number" id="reisendeGamle"> Honnør</input><br>
+    <button onclick="prisFlere()">Regn ut billettpriser</button><br>
+    <label for="billettpris" id="billettprisFlere"></label>
 
 
+
+
+    <script src="javaScript.js"></script>
 
 </body>
 </html>
