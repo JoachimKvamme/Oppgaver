@@ -6,18 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
+    <div class="grid">
     <!-- Oppgave 1 -->
-
+<div class="grid-item">
     <h2>Skriv inn ditt navn</h2>
     <input type="text" id="navnefelt" placeholder="Skriv inn ditt navn">
     <button onclick="hei()">Klikk her</button>
     <label for="melding" id="melding"></label>
-
-    <script src="javaScript.js"></script>
+</div>
+    
 
     <!-- Oppgave 2 -->
-
+<div class="grid-item">
     <h2>Kalkulator</h2>
     <input type="number" id="tall1" placeholder="Tall nummer én">
     <select name="operator" id="operator">Velg en operasjon
@@ -29,9 +30,9 @@
     <input type="number" id="tall2" placeholder="Tall nummer to">
     <button onclick="kalkulator()">Regn ut</button>
     <label for="resultat" id="resultat"></label>
-
+</div>
     <!-- Oppgave 3 -->
-
+<div class="grid-item">
     <h2>På tide å velge en farge</h2>
     <label for="rød">Rød:</label>
     <input type="radio" name="farge" id="rød" value="Rød">
@@ -41,8 +42,121 @@
     <input type="radio" name="farge" id="blå" value="Blå">
     <button onclick="farge()">Klikk her</button>
     <label for="valgtFarge" id="valgtFarge"></label>
+</div>
+    <!-- Oppgave 4 -->
+
+   <h2>Bestem bakgrunnsfarge-verdiene</h2> 
+<div class="grid-item">
+    <label for="rød">Rød</label>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="255" value="255/2" class="slider" id="rødverdi" oninput="rødverdi()">
+      </div>
+    <label for="verdi" id="rødverdiUt">Rødverdi: </label><br>
+    <br>
+    <label for="grønn">Grønn</label>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="255" value="255/2" class="slider" id="grønnverdi" oninput="grønnverdi()">
+    </div>
+    <label for="grønnverdi" id="grønnverdiUt">Grønnverdi: </label><br>
+    <br>
+    <label for="blå">Blå</label>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="255" value="255/2" class="slider" id="blåverdi" oninput="blåverdi()">
+    </div> 
+    <label for="blåverdi" id="blåverdiUt">Blåverdi: </label><br>
+    <br>
+    <button onclick="velgBakgrunn()">Velg bakgrunnsfarge</button>
+
+</div>
+
+<!-- Oppgave 5 -->
 
 
+        <div>
+        <h2>Kryss av det du vil ha på handlelisten</h2>
+        <input type="checkbox" id="brød" value="Brød">
+        <label for="brød">Brød</label><br>
+        <input type="checkbox" id="melk" value="Melk">
+        <label for="brød">Melk</label><br>
+        <input type="checkbox" id="egg" value="Egg">
+        <label for="brød">Egg</label><br>
+        <input type="checkbox" id="olje" value="Olje">
+        <label for="brød">Olje</label><br>
+        <input type="checkbox" id="epler" value="Epler">
+        <label for="brød">Epler</label><br>
+        <input type="checkbox" id="pasta" value="Pasta">
+        <label for="brød">Pasta</label><br>
+        <input type="checkbox" id="kjøtt" value="Kjøtt">
+        <label for="brød">Kjøtt</label><br>
+        <input type="checkbox" id="fisk" value="Fisk">
+        <label for="brød">Fisk</label><br>
+        <input type="checkbox" id="vin" value="Vin">
+        <label for="brød">Vin</label><br>
+        <button onclick="handleliste()">Lag handleliste</button><br>
+        <button onclick="klarer()">Slett liste</button>
+        <p id="handleliste">Handleliste: <br></p>
+
+        </div>
+
+        <!-- Oppgave 6 -->
+
+        <div class="grid-item">
+            <h2>Karakterkalkulator!</h2>
+
+
+            <label for="oppgave">Oppgave 1:</label>
+            <input type="number" id="oppgave1"><br>
+            <label for="oppgave">Oppgave 2:</label>
+            <input type="number" id="oppgave2"><br>
+            <label for="oppgave">Oppgave 3:</label>
+            <input type="number" id="oppgave3"><br>
+            <label for="oppgave">Oppgave 4:</label>
+            <input type="number" id="oppgave4"><br>
+            <label for="oppgave">Oppgave 5:</label>
+            <input type="number" id="oppgave5"><br>
+
+            <button onclick="karakterkalkulator()">Regn ut</button><br>
+            
+            <label for="snitt" id="snitt">Elevens snitt: </label><br>
+            <label for="karakter" id="karakter">Endelig karakter: </label><br>
+
+
+        </div>
+
+        <!-- Oppgave 7 -->
+
+        <div>
+            <h2>Lønnskalkulator!</h2>
+            <label for="timer">Antall timer: </label>
+            <input type="tekst" id="timer"><br>
+            <label for="timepris">Timepris: </label>
+            <input type="tekst" id="timepris"><br>
+            <button onclick="lønnskalkulator()">Regn ut</button><br>
+            <label for="lønn" id="lønn">Lønn: </label><br>
+            <label for="validering" id="status">Status: </label>
+
+        </div>
+
+        <!-- Oppgave 8-->
+
+        <div>
+            <h2>Valutakalkulator!</h2>
+            <select name="fra-valuta" id="fra-valuta">
+
+            </select>
+            <input type="number">
+            <select name="til-valuta" id="til-valuta">
+                
+            </select>
+
+        </div>
+    <script src="javaScript.js"></script>
+
+</div>
 
 </body>
 </html>
+
+
+
+
