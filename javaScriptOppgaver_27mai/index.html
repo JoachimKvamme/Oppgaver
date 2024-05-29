@@ -141,13 +141,21 @@
 
         <div>
             <h2>Valutakalkulator!</h2>
-            <select name="fra-valuta" id="fra-valuta">
+            <select name="fra-valuta" id="fra-valuta">Fra-valuta
+                <option value="kroner">NOK</option>
+                <option value="dollar">$</option>
+                <option value="GBP">£</option>
 
             </select>
             <input type="number">
-            <select name="til-valuta" id="til-valuta">
-                
+            <select name="til-valuta" id="til-valuta">Til-valuta
+                <option value="kroner">NOK</option>
+                <option value="dollar">$</option>
+                <option value="GBP">£</option>
+
             </select>
+            <input type="number"><br>
+            <button onclick="valutakalkulator()">Regn ut</button>
 
         </div>
     <script src="javaScript.js"></script>

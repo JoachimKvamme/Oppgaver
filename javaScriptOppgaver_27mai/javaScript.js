@@ -185,3 +185,4 @@ function lønnskalkulator() {
 }
 
 // Oppgave 8
+
