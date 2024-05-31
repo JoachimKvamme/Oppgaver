@@ -6,7 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Historiegenerator!</h2>
-    
+    <!-- Oppgave 1 -->
+
+    <h2>Historiegenerator!</h2><br>
+    <label for="navn">Navn:</label><br>
+    <input type="text" id="navn"><br>
+    <select name="kjønn" id="kjønn"><br>
+        <option value="gutt">Gutt</option>
+        <option value="jente">Jente</option>
+        <option value="mann">Mann</option>
+        <option value="kvinne">Kvinne</option>
+        <option value="annet">Annet</option>
+    </select><br>
+    <label for="alder">Alder:</label><br>
+    <input type="number" id="alder"><br>
+    <button onclick="historiegenerator()">Generer</button><br>
+    <p id="fortelling"></p>
+
+    <!-- Oppgave 2 -->
+    <h2>Gjett et tall mellom 1 og 100!</h2><br>
+    <button onclick="gjettespillStart()">Trykk for å starte spill</button><br>
+    <label for="gjetning">Ditt tall:</label>
+    <input type="number" id="gjetning"><br>
+    <button onclick="sjekkGjetning()">Gjett!</button><br>
+    <label for="liv" id="liv">Gjenværende forsøk: </label><br>
+    <label for="resultat" id="resultat"></label>
+
+
+    <script src="javaScript.js"></script>
+
 </body>
 </html>
