@@ -186,3 +186,34 @@ function lønnskalkulator() {
 
 // Oppgave 8
 
+function valutakalkulator() {
+    let fraVerdi = Number(document.getElementById("fraVerdi").value)
+    let fraValuta = document.getElementById("fra-valuta").value
+    let tilValuta = document.getElementById("til-valuta").value
+    let tilVerdi = 0
+    
+
+    if (fraValuta == "kroner" && tilValuta == "USD") {
+        tilVerdi = (fraVerdi * 0.095)
+        document.getElementById("tilVerdi").innerHTML = `${fraVerdi} kroner er $${tilVerdi}.`
+    } else if (fraValuta == "kroner" && tilValuta == "GBP") {
+        tilVerdi = (fraVerdi * 0.0746)
+        document.getElementById("tilVerdi").innerHTML = `${fraVerdi} kroner er £${tilVerdi}.`
+    } else if (fraValuta == "USD" && tilValuta == "kroner") {
+        tilVerdi = (fraVerdi * 10.54)
+        document.getElementById("tilVerdi").innerHTML = `$${fraVerdi} er ${tilVerdi} kroner.`
+
+    } else if (fraValuta == "USD" && tilValuta == "GBP") {
+        tilVerdi = (fraVerdi * 0.79)
+        document.getElementById("tilVerdi").innerHTML = `$${fraVerdi} er £${tilVerdi}.`
+
+    } else if (fraValuta == "GBP" && tilValuta == "USD") {
+        tilVerdi = (fraVerdi * 1.27)
+        document.getElementById("tilVerdi").innerHTML = `£${fraVerdi} er $${tilVerdi}.`
+
+    } else if (fraValuta == "GBP" && tilValuta == "kroner") {
+        tilVerdi = (fraVerdi * 13.40)
+        document.getElementById("tilVerdi").innerHTML = `£${fraVerdi} er ${tilVerdi} kroner.`
+
+    }
+}

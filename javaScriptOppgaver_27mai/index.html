@@ -141,20 +141,23 @@
 
         <div>
             <h2>Valutakalkulator!</h2>
+            <label for="fra-valuta">Fra</label>
             <select name="fra-valuta" id="fra-valuta">Fra-valuta
                 <option value="kroner">NOK</option>
-                <option value="dollar">$</option>
+                <option value="USD">$</option>
                 <option value="GBP">£</option>
 
             </select>
-            <input type="number">
+            <input type="number" id="fraVerdi">
+            <label for="til-valuta">til</label>
             <select name="til-valuta" id="til-valuta">Til-valuta
                 <option value="kroner">NOK</option>
-                <option value="dollar">$</option>
+                <option value="USD">$</option>
                 <option value="GBP">£</option>
 
             </select>
-            <input type="number"><br>
+            <label for="tilVerdi" id="tilVerdi"></label><br>
+
             <button onclick="valutakalkulator()">Regn ut</button>
 
         </div>
