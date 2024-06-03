@@ -80,13 +80,19 @@ function bestillPizza() {
     let storrelse = ""
     let fyll = ""
 
+    // sjekker at brukeren har valgt størrelse og fyll, og gir beskjed om ikke
+
     if (!stor && !medium && !liten) {
         document.getElementById("bestilling").innerHTML = "Du må velge størrelse"
         document.getElementById("bestilling").classList.add("errorStyle")
     } else if (!kylling && !vegetar) {
         document.getElementById("bestilling").innerHTML = "Du må velge fyll"
         document.getElementById("bestilling").classList.add("errorStyle")
-    } else if (stor && kylling) {
+    } 
+    
+    // Printer ut en bekreftelse på hvilken pizza brukeren har valgt og bestilt.
+
+    else if (stor && kylling) {
         storrelse = "stor"
         fyll = "kylling"
         document.getElementById("bestilling").innerHTML = `Din bestilling av 1 ${storrelse} ${fyll}-pizza blir levert til deg innen 59 minutter!

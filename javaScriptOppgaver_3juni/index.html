@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgaver 3. juni</title>
+</head>
+<body>
+
+    <!-- Oppgave 1 & 3-->
+    <h2>Tipp!</h2><br>
+    <label for="tipping">Velg om det blir hjemmeseier, uavgjort eller borteseier ved å skrive inn 'h', 'u' eller 'b'.</label><br>
+    <input type="text" id="valg"><br>
+    <button onclick="tipping()">Tipp!</button>
+    <label for="valg" id="duHarTippet"></label><br>
+
+    <!-- Oppgave 2 -->
+    <h2>Tipp 2.0 (med switch i bakgrunnen)!</h2><br>
+    <label for="tipping">Velg om det blir hjemmeseier, uavgjort eller borteseier ved å skrive inn 'h', 'u' eller 'b'.</label><br>
+    <input type="text" id="tippevalg"><br>
+    <button onclick="tippingTo()">Tipp!</button>
+    <label for="valg" id="duHarTippetTo"></label><br>
+
+    
+    <!-- Oppgave 4 -->
+
+    <h2>KMI-kalkulator</h2><br>
+    <label for="vekt">Din vekt</label><br>
+    <input type="number" id="vekt">
+    <label for="vekt">kg</label><br>
+    <br>
+    <label for="høyde">Din høyde</label><br>
+    <input type="number" id="høyde">
+    <label for="høyde">cm</label><br>
+    <br>
+    <button onclick="kmiKalkulator()">Regn ut</button><br>
+
+    <label for="bmi" id="kmi"></label>
+
+    <script src="javaScript.js"></script>
+
+</body>
+</html>
