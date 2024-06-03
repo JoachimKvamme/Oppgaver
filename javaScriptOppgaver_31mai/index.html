@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oppgaver 31. mai</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- Oppgave 1 -->
@@ -30,7 +32,50 @@
     <input type="number" id="gjetning"><br>
     <button onclick="sjekkGjetning()">Gjett!</button><br>
     <label for="liv" id="liv">Gjenværende forsøk: </label><br>
-    <label for="resultat" id="resultat"></label>
+    <label for="resultat" id="resultat"></label><br>
+
+    <!-- Oppgave 3 -->
+
+    <h2>Fergepriser!</h2><br>
+
+    <input type="number" id="antVoksne">
+    <label for="voksne">Voksne</label><br>
+    
+    <input type="number" id="antBarn">
+    <label for="barn">Barn</label><br>
+    
+    <input type="number" id="antPensjonister">
+    <label for="honnør">Honnør</label><br>
+
+    <input type="radio" id="tur" name="turEllerTurRetur" value="tur">
+    <label for="tur">Enveisbillett</label><br>
+    <input type="radio" id="turRetur" name="turEllerTurRetur" value="turRetur">
+    <label for="tur">Tur/Retur</label><br>
+
+    <button onclick="fergepriser()">Finn pris</button><br>
+
+    <label for="pris" id="pris"></label>
+
+    <!-- Oppgave 4 -->
+    <h2>Bestill pizza!</h2>
+    <p>Størrelse:</p><br>
+    <label for="stor">Stor</label>
+    <input type="radio" name="størrelse" id="stor" value="stor"><br>
+    <label for="medium">Medium</label>
+    <input type="radio" name="størrelse" id="medium" value="medium"><br>
+    <label for="liten">Liten</label>
+    <input type="radio" name="størrelse" id="liten" value="liten"><br>
+    <br>
+
+    <p>Fyll:</p>
+    <label for="fyll">Kylling</label>
+    <input type="radio" name="fyll" id="kylling"><br>
+    <label for="fyll">Vegetar</label>
+    <input type="radio" name="fyll" id="vegetar"><br>
+    <br>
+
+    <button onclick="bestillPizza()">Bestill</button><br>
+    <label for="bestilling" id="bestilling"></label>
 
 
     <script src="javaScript.js"></script>
