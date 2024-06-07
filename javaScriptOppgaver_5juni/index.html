@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Oppgave 1 -->
+
+    <h2>Partall, oddetall eller primtall?</h2>
+    <p>Skriv inn et tall</p>
+    <input type="number" id="tall" placeholder="Skriv tallet her"><br>
+    <button onclick="partallOddetall()">Klikk her</button>
+    <p id="resultatTall"></p>
+
+    <!-- Oppgave 2 -->
+
+    <h2>Hvilket tall er størst?</h2>
+    <p>Skriv inn to tall</p>
+    <input type="number" id="høyLav" placeholder="Første tall"><br>
+    <input type="number" id="høyLavTo" placeholder="Andre tall"><br>
+    <button onclick="høyereLavere()">Klikke her</button><br>
+    <br>
+    <p id="resultatHoyLav"></p>
+
+    <!-- Oppgave 3  -->
+
+    <h2>Dager per måned</h2>
+
+    <label for="maaned">Skriv inn en måned, enten i skrift -- eksempel: januar -- eller et tall mellom 1 og 12.</label><br>
+    <input type="text" id="maaned"><br>
+    <button onclick="dagerPerMaaned()">Klikk her</button><br>
+    <p id="dagerPerMaaned"></p>
+
+    <!-- Oppgave 4 -->
+    <h2>Gjennomsnittsberegning</h2>
+    <p>Skriv inn et tall</p>
+    <input type="number" id="innførtTall"><br>
+    <button onclick="leggTil()">Legg til</button><br>
+    <textarea name="tallene" id="tallListe"></textarea><br>
+    <label for="totalsum" id="totalsum">Totalsum: </label><br>
+    <label for="antallTall" id="antallTall">Antall tall: </label><br>
+    <button onclick="gjennomsnittberegning()">Gjennomsnittsberegning</button>
+    <p id="resultatGjennomsnitt">Gjennomsnitt: </p>
+    <button onclick="nullstill()">Nullstill</button><br>
+
+    <!-- Oppgave 5 -->
+
+    <h2>Beboere i Andeby!</h2>
+
+    <p>Trykk på knappen for å få en liste med innbyggere</p>
+    <button onclick="andebyInn()" >Opprett liste</button>
+
+    <p id="leggTilKnapp">Legg til innbyggere</p>
+    <input type="text" id="innbygger" placeholder="Skriv inn navnet på en innbygger i Andeby"><br>
+    <button onclick="leggTilInnbygger()" >Legg til</button><br>
+
+
+    <script src="javaScript.js"></script>
+</body>
+</html>

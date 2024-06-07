@@ -93,7 +93,7 @@ function dato() {
             document.getElementById("dato").innerHTML = `${dagStreng}. september`
             break
         case "10":
-            document.getElementById("dato").innerHTML = `${oktober}. oktober`
+            document.getElementById("dato").innerHTML = `${dagStreng}. oktober`
             break
         case "11":
             document.getElementById("dato").innerHTML = `${dagStreng}. november`
@@ -119,6 +119,6 @@ function skuddår() {
     } else {
         document.getElementById("resultatSkuddår").innerHTML = `${år} er ikke et skuddår.`
     }
-    
+
     document.getElementById("år").focus()
 }
