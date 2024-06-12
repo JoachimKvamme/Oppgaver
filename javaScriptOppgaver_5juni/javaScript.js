@@ -174,19 +174,45 @@ function gjennomsnittberegning() {
 let personer = ["Ole", "Dole", "Doffen", "Donald", "Dolly"]
 
 function andebyInn() {
-    let div = document.createElement("div")
-    let liste = document.createElement("ol")
+    let nyttElement = document.createElement("p")
+    let innholdNy = document.createTextNode("Hallo!")
 
-    div.appendChild(liste)
+    nyttElement.appendChild(innholdNy)
+    let elementGammelt = document.getElementById("leggTilKnapp")
 
-    let listepunkt1 = document.createElement("li")
-    let person1 = document.createTextNode(personer[0])
+    document.body.insertBefore(nyttElement, elementGammelt)
 
-    liste.appendChild("listepunkt1")
-    listepunkt1.appendChild("person1")
+    let andebyListe = document.createElement("ol")
+    andebyListe.setAttribute("id", "andebyliste")
+    document.body.insertBefore(andebyListe, elementGammelt)
 
-    let referanse = document.getElementById("leggTilKnapp")
+    let listePunkt1 = document.createElement("li")
+    listePunkt1.innerHTML = personer[0]
+    document.getElementById("andebyliste").appendChild(listePunkt1)
 
-    document.body.insertBefore(div, referanse)
+    let listePunkt2 = document.createElement("li")
+    listePunkt2.innerHTML = personer[1]
+    document.getElementById("andebyliste").appendChild(listePunkt2)
+
+    let listePunkt3 = document.createElement("li")
+    listePunkt3.innerHTML = personer[2]
+    document.getElementById("andebyliste").appendChild(listePunkt3)
+
+    let listePunkt4 = document.createElement("li")
+    listePunkt4.innerHTML = personer[3]
+    document.getElementById("andebyliste").appendChild(listePunkt4)
+
+    let listePunkt5 = document.createElement("li")
+    listePunkt5.innerHTML = personer[4]
+    document.getElementById("andebyliste").appendChild(listePunkt5)
 }
+
+function leggTilInnbygger() {
+    let andebo = document.getElementById("innbygger").value
+    let nyttListePunkt = document.createElement("li")
+    nyttListePunkt.innerHTML = andebo
+    document.getElementById("andebyliste").appendChild(nyttListePunkt)
+}
+
+
 
