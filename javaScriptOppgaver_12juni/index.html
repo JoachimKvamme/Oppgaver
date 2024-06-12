@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Oppgave 1 -->
+    <h2>Partall mellom 0 og 100</h2>
+    <button onclick="partall()">Klikk for tall</button>
+    <div id="partallDiv"></div>
+    <button onclick="fjernPartall()">Fjern tall</button>
+
+    <!-- Oppgave 2 -->
+    <h2>Oddetall mellom 0 og 100</h2>
+    <button onclick="oddetall()">Klikk for tall</button>
+    <div id="oddetallDiv"></div>
+    <button onclick="fjernOddetall()">Fjern tall</button>
+
+    <!-- Oppgave 3 -->
+    <h2>Tall som er delelig på fem mellom 0 og 100</h2>
+    <button onclick="deleligPåFem()">Klikk her</button>
+    <div id="deltFemDiv"></div>
+
+    <!-- Oppgave 4 -->
+
+    <h2>Partall som er delelig på fem mellom 0 og 100</h2>
+    <button onclick="deleligPåFemPar()">Klikk her</button>
+    <div id="deltFemParDiv"></div>
+
+    <!-- Oppgave 5 -->
+
+    <h2>Tall som er delelig på åtte eller tre mellom 0 og 100</h2>
+    <button onclick="deltÅtteOgTre()">Klikk her</button>
+    <div id="deltÅtteOgTreDiv"></div>
+
+    <!-- Oppgave 6 -->
+    <h2>Gjenta utsagn</h2>
+    <p>Skriv inn et utsagn du vil ha gjentatt:</p>
+    <input type="text" id="brukerUtsagn"><br>
+    <p>Hvor mange ganger skal dette gjentas?</p>
+    <input type="number" id="gjentagelser"><br>
+    <button onclick="gjentaUtsagn()">Klikk her</button><br>
+    <div id="gjentaUtsagnDiv"></div>
+
+    <!-- Oppgave 7 -->
+
+    <h2>Tall ganget på seg selv fra null til hundre</h2>
+    <button onclick="gangetSegSelv()">Klikk her</button>
+    <div id="gangetSegSelvDiv"></div>
+
+    <!-- Oppgave 8 -->
+
+    <h2>Fra 1 til 7 med while-loop</h2>
+    <button onclick="whileEnTilSyv()">Klikk her</button><br>
+    <div id="whileEnTilSyvDiv"></div>
+
+    <!-- Oppgave 9 -->
+
+    <h2>Hvert femte tall fra 12 til 98</h2>
+    <button onclick="hvertFemteTall()">Klikk her</button><br>
+    <div id="hvertFemteTallDiv"></div>
+
+    <!-- Oppgave 10 -->
+
+    <h2>Velg et intervall - få ut hvert tall i mellom</h2>
+    <label for="tall">Første tall:</label>
+    <input type="number" id="tall1"><br>
+    <label for="tall">Andre tall:</label>
+    <input type="number" id="tall2"><br>
+    <button onclick="egenRekke()">Klikk her</button>
+    <div id="egenRekkeDiv"></div>
+
+    
+    <button onclick="tomAlt()">Tøm siden</button>
+    <script src="javaScript.js"></script>
+</body>
+</html>
