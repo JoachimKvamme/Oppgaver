@@ -1,4 +1,4 @@
-let tall = [34,53,2,3,34,26,26,85,3,4,98,2,12]
+// Oppgave 1
 
 function tallarrayløkke() {
     let tall = [34,53,2,3,34,26,26,85,3,4,98,2,12]
@@ -79,6 +79,53 @@ Primtallene i "tall": `
     
 Summen av primtallene i "tall": ${primtallsum}`
 
-    
+}
 
+// Oppgave 2
+
+function nyeTall() {
+    let tall = [34,53,2,-3,34,26,-26,85,3,4,98,2,-12]
+    document.getElementById("tallfeltTo").innerHTML = `tall = [34,53,2,-3,34,26,-26,85,3,4,98,2,-12]`
+    let sumTall = 0
+    for (let i = 0; i < tall.length; i++) {
+        sumTall += tall[i]
+    }
+    document.getElementById("tallfeltTo").innerHTML += `
+    
+Summen av tall: ${sumTall}`
+
+    document.getElementById("tallfeltTo").innerHTML += `
+    
+Negative tall i rekken: `
+
+    for (let i = 0; i < tall.length; i++) {
+        if (tall[i] < 0) {
+            document.getElementById("tallfeltTo").innerHTML += `${tall[i]} `
+        }
+    }
+    document.getElementById("tallfeltTo").innerHTML += `
+    
+Gjennomsnitt av arrayet: ${(sumTall / tall.length).toFixed(4)}`
+
+    document.getElementById("tallfeltTo").innerHTML += `
+    
+Det minste av tallene: `
+    let minsteTall = 1000
+    for (let i = 0; i < tall.length; i++) {
+        if (tall[i] < minsteTall) {
+            minsteTall = tall[i]
+        }
+    }
+    document.getElementById("tallfeltTo").innerHTML += `${minsteTall} `
+
+    document.getElementById("tallfeltTo").innerHTML += `
+    
+Summen av partallene: `
+sumTall = 0
+    for (let i = 0; i < tall.length; i++) {
+        if (tall[i] % 2 == 0) {
+            sumTall += tall[i]
+        }
+    }
+    document.getElementById("tallfeltTo").innerHTML += `${sumTall}`
 }
