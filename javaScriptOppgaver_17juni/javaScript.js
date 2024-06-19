@@ -176,3 +176,61 @@ function tallfrekvens() {
         document.getElementById("frekvens").innerHTML += `${i}: ${antall[i]} ganger. <br>`
     }
 }
+
+// Oppgave 4 og 5
+
+function maaned() {
+    let maaneder = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"]
+    let maanedslengde = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    let valgtMaaned = (Number(document.getElementById("maaned").value) - 1)
+    document.getElementById("valgtMaaned").innerHTML = `${maaneder[valgtMaaned]} har ${maanedslengde[valgtMaaned]} dager.`
+
+}
+
+// Oppgave 6
+
+let tallrekke = []
+
+function tilfeldigeTall() {
+    for (let i = 0; i < 10; i++) {
+        let nyttTall = Math.floor(Math.random() * 11)
+        tallrekke.push(nyttTall)
+    }
+    document.getElementById("array").innerHTML = `${tallrekke}`
+}
+
+function sjekkTall() {
+    let valgtTall = Number(document.getElementById("valgtTall").value)
+    for (let i = 0; i < tallrekke.length; i++) {
+        if (valgtTall == tallrekke[i]) {
+            document.getElementById("resultat").innerHTML = `${valgtTall} finnes i arrayet.`
+        }
+    }
+
+}
+
+// Oppgave 7
+
+let arr = ["Hans","Ole","Nils","Olav","Per","Knut","Kari","Line","Pia"]
+let navn = []
+
+let vedkommende = "" 
+
+function plukkNavn() {
+    let løkke = navn.length
+    while (løkke < 3) {
+        vedkommende = Math.floor(Math.random() * 9)
+        let flagg = true
+        for (let i = 0; i < navn.length; i++) {
+            if (arr[vedkommende] == navn[i]) {
+                flagg = false
+            }
+        }
+        if (flagg) {
+            navn.push(arr[vedkommende])
+        }
+        løkke = navn.length
+    }
+    document.getElementById("valgteNavn").innerHTML = `${navn}`
+}
+
