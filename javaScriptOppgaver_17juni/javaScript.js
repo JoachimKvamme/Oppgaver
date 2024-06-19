@@ -129,3 +129,50 @@ sumTall = 0
     }
     document.getElementById("tallfeltTo").innerHTML += `${sumTall}`
 }
+
+// Oppgave 3
+
+function tallfrekvens() {
+
+    let tall = [4,5,2,3,4,6,1,2,0,9,7,6,8,5,6,4,2,3,4,7,3]
+    let antall = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+    for (let i = 0; i < tall.length; i++) {
+        switch (tall[i]) {
+            case 0:
+                antall[0] += 1
+                break
+            case 1:
+                antall[1] += 1
+                break
+            case 2:
+                antall[2] += 1
+                break
+            case 3:
+                antall[3] += 1
+                break
+            case 4:
+                antall[4] += 1
+                break
+            case 5:
+                antall[5] += 1
+                break
+            case 6:
+                antall[6] += 1
+                break
+            case 7:
+                antall[7] += 1
+                break
+            case 8:
+                antall[8] += 1
+                break
+            case 9:
+                antall[9] += 1
+            
+        }
+    }
+    document.getElementById("frekvens").innerHTML = `I arrayet finner man tallene med følgende frekvens: <br>`
+    for (let i = 0; i < antall.length; i++) {
+        document.getElementById("frekvens").innerHTML += `${i}: ${antall[i]} ganger. <br>`
+    }
+}
