@@ -228,9 +228,20 @@ function plukkNavn() {
         }
         if (flagg) {
             navn.push(arr[vedkommende])
+
         }
         løkke = navn.length
     }
-    document.getElementById("valgteNavn").innerHTML = `${navn}`
+
+    document.getElementById("valgteNavn").innerHTML = `Tre tilfeldige navn fra listen: `
+
+    for (let i = 0; i < navn.length; i++) {
+        if (i < navn.length - 1) {
+            document.getElementById("valgteNavn").innerHTML += `${navn[i]}, `
+        } else {
+            document.getElementById("valgteNavn").innerHTML += `${navn[i]}.`
+        }
+    }
+    
 }
 
