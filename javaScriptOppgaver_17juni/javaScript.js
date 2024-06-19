@@ -242,6 +242,6 @@ function plukkNavn() {
             document.getElementById("valgteNavn").innerHTML += `${navn[i]}.`
         }
     }
-    
+    navn = []
 }
 
